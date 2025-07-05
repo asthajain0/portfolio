@@ -3,6 +3,7 @@ import Link from "next/link"
 import React, {useState} from "react"
 import { AiOutlineMenu,AiOutlineClose } from "react-icons/ai"
 import { motion } from "framer-motion"
+import { FaDownload } from "react-icons/fa6";
 
 
 const navLinks = [
@@ -41,8 +42,8 @@ const Navbar = () => {
 
   return (
     <div className="text-white/70 pt-6">
-        <div className="hidden md:flex items-center px-4 py-2 mx-auto max-w-[400px]" >
-            <ul className="flex flex-row p-4 space-x-8">
+        <div className="hidden md:flex items-center px-4 py-2 mx-auto max-w-[500px]" >
+            <ul className="flex flex-row p-4 space-x-8 items-center">
                 {navLinks.map((link,index)=>(
                     <li key={index}>
                         <Link href={link.path} className="group">
@@ -70,6 +71,8 @@ const Navbar = () => {
                         </div>
                     </a>
                 </li>
+                <a href="https://drive.google.com/file/d/1jLVzZBCVEIwDr6MLsKZuudW65g3Wpaoq/view?usp=sharing" className="flex gap-2 border-1 px-2.5 py-1 items-center rounded-2xl
+                bg-gradient-to-r from-orange-400 via-purple-700 to-orange-800 animate-gradient-xy"><span className="font-bold text-white z-10 cursor-pointer">Resume</span> <FaDownload size={15}/></a>
             </ul>
         </div>
 
@@ -94,6 +97,8 @@ const Navbar = () => {
             </ul>
 
         </motion.div>
+
+        
 
     </div>
   )
