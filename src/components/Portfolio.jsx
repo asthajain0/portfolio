@@ -4,9 +4,18 @@ import { motion } from "framer-motion"
 import project1 from '../assets/proj1.png'
 import project2 from '../assets/proj2.png'
 import project3 from '../assets/proj3.png'
+import project4 from '../assets/proj4.png'
 
 const projects = [
-  
+
+  {
+    title: "FlashGen - FlashCard Generator",
+    desc: "A smart tool that lets users instantly generate flashcards from their notes using AI. Built with React and Tailwind CSS, it features a responsive UI, real-time character count, loading feedback, and context-based state management. Designed to enhance active recall and boost efficient study habits.",
+    devstack: "React, axios, Gemini API, Nodemon, express.js, vercel",
+    link: "https://flashgen-three.vercel.app",
+    git: "https://github.com/asthajain0/FlashCard-Generator",
+    src: project4,
+  },
   {
     title: "PetPooja - Food Delivery Application",
     desc: "Designed a full-stack food delivery platform with separate customer and admin interfaces, enabling seamless ordering and management. Integrated secure authentication, Stripe payments, real-time dashboard, and role-based access for efficient operations.",
