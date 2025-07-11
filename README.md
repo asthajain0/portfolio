@@ -1,3 +1,39 @@
+# 💼 Astha Jain’s Portfolio
+
+Welcome! I’m Astha, a passionate software engineer specializing in full-stack development. This repository showcases my personal projects, skills, and background.
+
+
+
+## 📚 Education  
+Pursuing B.E. in Computer Science from IET DAVV, Indore (CGPA: 8.6). Strong academic track record with 93.8% in Class 12 and 92.2% in Class 10, complemented by active engagement in practical projects and coding challenges.
+
+
+
+## 💻 Web Development  
+I build scalable, secure web applications using modern tech stacks—React, Next.js, Node.js, Express, MongoDB, Stripe, and more. My projects feature authentication, real-time updates, responsive UIs, and smooth deployment using Vercel and Render.
+
+
+
+## 🧠 Problem Solving  
+Solved 450+ problems on platforms like LeetCode and GFG. I focus on writing optimized algorithms and embrace complex challenges to improve my efficiency and logical thinking.
+
+
+
+## 📚 Core Subjects  
+Strong understanding of Data Structures, Algorithms, OOP, DBMS, Operating Systems, and Computer Networks—applied effectively through academic coursework and real-world coding projects.
+
+
+
+## 🔧 Selected Projects
+
+| Project | Description | Stack | Link |
+|--------|-------------|-------|------|
+| **Faculty Portal** | Centralized faculty portal for managing student records, deadlines, and collaboration. | React, Spring Boot, SQL, Redux, Material-UI, Jest | _Coming soon_ |
+| **PetPooja - Food Delivery** | Full-stack delivery platform with secure auth, Stripe payments, and real-time admin dashboard. | React, Node, Express, MongoDB, Stripe | [Live](https://food-delivery-frontend-pe78.onrender.com) • [GitHub](https://github.com/asthajain0/Food-Delivery) |
+| **Bloggers** | AI-powered blogging tool with Gemini-generated content, real-time comments, and responsive design. | React, Node, MongoDB, Gemini API | [Live](https://bloggers-xi-rouge.vercel.app) • [GitHub](https://github.com/asthajain0/Bloggers) |
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
