@@ -5,9 +5,17 @@ import project1 from '../assets/proj1.png'
 import project2 from '../assets/proj2.png'
 import project3 from '../assets/proj3.png'
 import project4 from '../assets/proj4.png'
+import healthyogapic from '../assets/healthyoga.png'
 
 const projects = [
-
+  {
+    title: "HealthYoga - Problem-Focused Yoga Guidance System",
+    desc: "Developed a full-stack wellness platform enabling users to create personalized and problem specific yoga plans. Implemented secure Firebase Authentication (email/password, Google). Integrated real-time exercise recommendations, responsive UI, and cloud-hosted data sync for smooth cross-device usage.",
+    devstack: "ReactJs, Google Firebase, Node.js, ExpressJs, Tailwind CSS",
+    link: "https://healthyoga.vercel.app/",
+    git: "https://github.com/asthajain0/Healthyoga",
+    src: healthyogapic,
+  },
   {
     title: "FlashGen - FlashCard Generator",
     desc: "A smart tool that lets users instantly generate flashcards from their notes using AI. Built with React and Tailwind CSS, it features a responsive UI, real-time character count, loading feedback, and context-based state management. Designed to enhance active recall and boost efficient study habits.",

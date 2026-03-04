@@ -7,8 +7,9 @@ import { FaDownload } from "react-icons/fa6";
 
 
 const navLinks = [
-    {title:"About" , path: "#about"},
-    {title:"Portfolio" , path: "#portfolio"},
+    { title: "About", path: "#about" },
+    { title: "Experience", path: "#experience" },
+    { title: "Portfolio", path: "#portfolio" },
 ];
 
 const Navbar = () => {
@@ -42,7 +43,7 @@ const Navbar = () => {
 
   return (
     <div className="text-white/70 pt-6">
-        <div className="hidden md:flex items-center px-4 py-2 mx-auto max-w-[500px]" >
+        <div className="hidden md:flex items-center px-4 py-2 mx-auto max-w-[700px]" >
             <ul className="flex flex-row p-4 space-x-8 items-center">
                 {navLinks.map((link,index)=>(
                     <li key={index}>
@@ -66,42 +67,42 @@ const Navbar = () => {
                             <div className="absolute w-2/3 h-1 transition-all duration-300 ease-out
                             bg-orange-400 rounded-full group-hover:w-full"></div>
 
-                            <div className="mt-1 absolute w-1/3 h-1 transition-all duration-300 ease-out
+                                <div className="mt-1 absolute w-1/3 h-1 transition-all duration-300 ease-out
                             bg-orange-600 rounded-full group-hover:w-full"></div>
-                        </div>
-                    </a>
-                </li>
-                <a href="https://drive.google.com/file/d/1jLVzZBCVEIwDr6MLsKZuudW65g3Wpaoq/view?usp=sharing" className="flex gap-2 border-1 px-2.5 py-1 items-center rounded-2xl
-                bg-gradient-to-r from-orange-400 via-purple-700 to-orange-800 animate-gradient-xy"><span className="font-bold text-white z-10 cursor-pointer">Resume</span> <FaDownload size={15}/></a>
-            </ul>
-        </div>
-
-        <div onClick={toggleNav} className="md:hidden absolute top-5 right-5 border rounded text-white/70 border-white/70 p-2 z-50">
-            {nav? <AiOutlineClose size={30}/> :<AiOutlineMenu size={30} />}
-        </div>
-
-        <motion.div
-            initial = {false}
-            animate = {nav?'open':'closed'}
-            variants={menuVariants}
-            className="fixed left-0 top-0 w-full z-40 bg-black/90"
-        >
-            <ul className="text-4xl font-semibold my-24 text-center space-y-8">
-                {navLinks.map((link,index)=>(
-                    <li key={index}>
-                        <Link href={link.path} onClick={closeNav}>
-                           {link.title} 
-                        </Link>
+                            </div>
+                        </a>
                     </li>
-                ))}
-            </ul>
+                    <a href="https://drive.google.com/file/d/1qWyheiOZDXah2HBxzmgPNuq9L7oaj_cX/view?usp=sharing" className="flex gap-2 border-1 px-2.5 py-1 items-center rounded-2xl
+                bg-gradient-to-r from-orange-400 via-purple-700 to-orange-800 animate-gradient-xy"><span className="font-bold text-white z-10 cursor-pointer">Resume</span> <FaDownload size={15} /></a>
+                </ul>
+            </div>
 
-        </motion.div>
+            <div onClick={toggleNav} className="md:hidden absolute top-5 right-5 border rounded text-white/70 border-white/70 p-2 z-50">
+                {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
+            </div>
 
-        
+            <motion.div
+                initial={false}
+                animate={nav ? 'open' : 'closed'}
+                variants={menuVariants}
+                className="fixed left-0 top-0 w-full z-40 bg-black/90"
+            >
+                <ul className="text-4xl font-semibold my-24 text-center space-y-8">
+                    {navLinks.map((link, index) => (
+                        <li key={index}>
+                            <Link href={link.path} onClick={closeNav}>
+                                {link.title}
+                            </Link>
+                        </li>
+                    ))}
+                </ul>
 
-    </div>
-  )
+            </motion.div>
+
+
+
+        </div>
+    )
 }
 
 export default Navbar
